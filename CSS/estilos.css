@@ -1,6 +1,6 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
-background-color: #faf8f3;
+background-color: #aa9a70;
 color: #263c59;
 margin: 0;
 
@@ -18,7 +18,7 @@ p {
     line-height: 1.5;
 }
 #cabecera {
-    background-color: #263c59;
+    background-color: #c5d8eb;
     color: white;
     text-align: center;
     padding: 25px;
