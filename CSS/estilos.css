@@ -1,3 +1,4 @@
+/*ESTILOS GENERALES*/
 body{
 font-family: Arial, Helvetica, sans-serif;
 background-color: #e6e4e0;
@@ -18,6 +19,7 @@ h2 {
 p {
     line-height: 1.5;
 }
+/*CABECERA*/
 #cabecera {
     background-color: #263c59;
 
@@ -54,6 +56,7 @@ p {
     padding-left: 12%;
     margin: 0;
 }
+/*NAVEGACION*/
 nav {
 margin-top: 20px;
 text-align: end;
@@ -76,6 +79,7 @@ nav a :active {
     background-color: #1976b9;
     border-radius: 5px;
 }
+/*BIENVENIDA*/
 #inicio {
     padding: 20px;
     background-color: white;
@@ -97,12 +101,20 @@ nav a :active {
     text-decoration: none;
     border-radius: 6px;
 }
+/*GENEROS*/
 #generos {
     background-color: #e8f2fb;
     padding: 20px;
     text-align: center;
+    
 
 }
+.iconogenero {
+
+    width: 100px;
+
+}
+    
 .genero {
     display: inline-block;
     vertical-align: top;
@@ -113,6 +125,7 @@ nav a :active {
     padding: 15px;
     border: 1px solid#c5d8eb;
     border-radius: 8px;
+    height: 250px;
 
 
 }
@@ -121,7 +134,7 @@ nav a :active {
 
 
 }
-
+/*RECOMENDACION*/
 #recomendacion {
     
     background-color: #fce8ec;
@@ -144,6 +157,7 @@ font-style: italic;
 text-align: center;
 border-radius: 6px;    
 }
+/*CATALOGO*/
 
 #catalogo {
     text-align: center;
@@ -171,6 +185,7 @@ border-radius: 6px;
     font-size: 15px;
 
 }
+/*OTROS LIBROS*/
 #otros-libros {
     background-color: #fff5e5;
     padding: 20px;
@@ -181,7 +196,9 @@ border-radius: 6px;
 
 #otros-libros li {
     margin: 8px;
+
 }
+/*PIE DE PAGINA*/
 footer {
     background-color: #263c59;
     color: white;
@@ -191,4 +208,8 @@ footer {
 }
 footer a {
     color: white;
+}
+.redes {
+    width: 30px;
+    height: 30px;
 }
