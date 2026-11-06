@@ -1,22 +1,26 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-background-color: #faf8f3;
-color: #263c59;
-margin: 0;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8f3;
+    color: #263c59;
+    margin: 0;
 
 }
+
 main {
 
     padding: 25px;
 }
+
 h2 {
     color: #263c59;
     font-size: 26px;
 
 }
+
 p {
     line-height: 1.5;
 }
+
 #cabecera {
     background-color: #263c59;
     color: white;
@@ -30,34 +34,43 @@ p {
     margin: 10px;
 
 }
+
 #cabecera p {
-    
+
     font-style: italic;
 }
+
 nav {
-margin-top: 20px;
+    margin-top: 20px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 10px;
     padding: 8px;
-
+    transition: 3s;
+    transition: transform 0.5s
 }
+
 nav a:hover {
     background-color: #1976b9;
     border-radius: 5px;
+    transform: scale(0.9);
 
 }
+
 nav a :active {
     background-color: #1976b9;
     border-radius: 5px;
 }
+
 #inicio {
     padding: 20px;
     background-color: white;
 
 }
+
 #inicio img {
     width: 250px;
     border-radius: 10px;
@@ -73,13 +86,29 @@ nav a :active {
     margin: 10px;
     text-decoration: none;
     border-radius: 6px;
+    transform: 0.5s;
+    transition: transform 5s, background-color 5s;
+
+
 }
+
+.boton:hover {
+    transform: translateX(20px);
+    background-color: crimson;
+
+
+
+
+}
+
+
 #generos {
     background-color: #e8f2fb;
     padding: 20px;
     text-align: center;
 
 }
+
 .genero {
     display: inline-block;
     vertical-align: top;
@@ -93,6 +122,7 @@ nav a :active {
 
 
 }
+
 .genero h3 {
     color: #263c59;
 
@@ -100,26 +130,42 @@ nav a :active {
 }
 
 #recomendacion {
-    
+
     background-color: #fce8ec;
-    
+
     padding: 20px;
-    
+
     margin-top: 20px;
     border-radius: 5px;
 
-} 
+}
+
 .portada {
     width: 130px;
     border-radius: 5px;
 
 }
+
+
+.portada:hover {
+
+    transform: scale(1.2);
+    transform: rotate(-90deg);
+
+
+
+
+
+}
+
+
+
 .cita {
-background-color: #fff5e5;
-padding: 12px;
-font-style: italic;
-text-align: center;
-border-radius: 6px;    
+    background-color: #fff5e5;
+    padding: 12px;
+    font-style: italic;
+    text-align: center;
+    border-radius: 6px;
 }
 
 #catalogo {
@@ -137,8 +183,36 @@ border-radius: 6px;
     padding: 15px;
     margin: 8px;
     text-align: center;
-
+    transition: transform 5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.596);
+    transition: transform 0.5s, box-shadow 0.5s;
 }
+
+
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+
+
+
+
+.tarjeta {
+    animation: mover 5s ease-out;
+}
+
+.tarjeta:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.712)
+}
+
 .tarjeta h3 {
     font-size: 20px;
 
@@ -148,6 +222,7 @@ border-radius: 6px;
     font-size: 15px;
 
 }
+
 #otros-libros {
     background-color: #fff5e5;
     padding: 20px;
@@ -159,6 +234,7 @@ border-radius: 6px;
 #otros-libros li {
     margin: 8px;
 }
+
 footer {
     background-color: #263c59;
     color: white;
@@ -166,6 +242,83 @@ footer {
     padding: 15px;
 
 }
+
 footer a {
     color: white;
 }
+
+@keyframes cambiarcolor {
+    0% {
+        color: #263c59;
+    }
+
+    20% {
+        color: red;
+    }
+
+    50% {
+        color: orangered;
+    }
+
+    70% {
+        color: chartreuse;
+    }
+
+    90% {
+        color: deeppink;
+    }
+
+    100% {
+        color: black;
+    }
+
+}
+
+h1 {
+    animation: cambiarcolor 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.portada {animation:girar 3s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {opacity: 1;
+    }
+}
+#inicio {
+    animation: aparecer 2s;
+}
+@keyframes palpitar {
+    0% {
+       transform: scale(1);
+    }
+
+    50% {
+     transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.boton {
+    animation: palpitar 4s infinite;
+}
+
+
