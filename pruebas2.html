@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .contenedor {
+
+            display: grid;
+            grid-template-columns: repeat(6,1fr 1fr 1fr);
+            gap:40px;
+            grid-template-rows: 80px;
+
+
+
+            
+        }
+
+        .caja {
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .roja {
+
+            background-color: red; 
+            
+
+        }
+        .azul {
+            background-color:blue;
+            color: white;
+        }
+
+        .verde {
+            background-color: green; 
+
+        }
+        .amarilla {
+            background-color: yellow;
+            
+        }
+
+        .negro { 
+            background-color: black;
+            color: white;
+            
+    
+        }
+
+
+        .naranja {
+            background-color: orange;
+
+        }
+
+        .pagina {
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+            "cabecera cabecera"
+            "contenido lateral"
+            "pie pie";
+            gap: 15px;
+
+
+        }
+
+        header {
+            grid-area: cabecera;
+            background-color: lightblue;
+
+        }
+
+        main {
+            grid-area: contenido;
+            background-color: lightgreen;
+            min-height: 200px;
+
+        }
+
+         aside {
+            grid-area: lateral;
+            background-color: lightyellow;
+
+         }
+
+         footer {
+
+            grid-area: pie;
+            background-color: lavender;
+         }
+
+    </style>
+
+    <div class="contenedor">
+
+        <div class=" caja roja">caja 1 <img src="/img/HarryPotter.jpg" alt="portadahp"></div>
+
+         <div class=" caja azul">caja 2 <img src="/img/HarryPotter.jpg" alt="portadahp2"></div>
+
+          <div class=" caja verde">caja 3 <img src="/img/HistoriaInterminable.jpg" alt="portadahistoria"></div>
+
+          <div class="caja amarilla">caja 4 <img src="/img/HistoriaInterminable.jpg" alt="portadahistoria"></div>
+          <div class="caja negro">caja 5 <img src="/img/principito.jpg" alt="portadaprincipito"></div>
+          <div class="caja naranja">caja 6 <img src="/img/principito.jpg" alt="portadaprincipito"></div>
+
+
+
+    </div>
+
+    <div class="pagina">
+        <header>cabecera</header>
+        <main>
+             <h2>contenido principal</h2>
+             <p>aqui apareceria el contenido de nuestra web</p>
+
+
+        </main>
+        <aside>
+            barra lateral
+        </aside>
+
+        <footer>
+            pie de pagina
+        </footer>
+
+    </div>
+
+    
+    
+</body>
+</html>
